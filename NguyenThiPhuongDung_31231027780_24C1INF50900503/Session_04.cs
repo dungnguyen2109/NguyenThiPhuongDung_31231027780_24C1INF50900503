@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -50,6 +51,7 @@ namespace NguyenThiPhuongDung_31231027780_24C1INF50900503
             } while (true);
         }
         static void Session04_ex01()
+            //Write a C# Sharp program to check whether a given number is even or odd
         {
             Console.WriteLine("Nhap vao 1 so:");
             int a = int.Parse(Console.ReadLine());
@@ -57,7 +59,8 @@ namespace NguyenThiPhuongDung_31231027780_24C1INF50900503
                 Console.WriteLine(" day la so chan");
             else Console.WriteLine(" day la so le ");
         }
-        static void Session04_ex02() 
+        static void Session04_ex02()
+        //Write a C# Sharp program to find the largest of three numbers
         {
             Console.Write("Nhap vao so a:");
             int a = int.Parse(Console.ReadLine());
@@ -74,7 +77,10 @@ namespace NguyenThiPhuongDung_31231027780_24C1INF50900503
                 else Console.WriteLine($"so lon nhat la {c}");
             }
         }
-        static void Session04_ex03() 
+        static void Session04_ex03()
+            //Write a C# Sharp program to accept a coordinate point in an XY
+            //coordinate system and determine in which quadrant the coordinate
+            //point lies.
         {
             Console.WriteLine("nhap toa do X:");
             int x = int.Parse(Console.ReadLine());
@@ -84,6 +90,19 @@ namespace NguyenThiPhuongDung_31231027780_24C1INF50900503
             else if (x < 0 && y > 0) { Console.WriteLine("Toa do thuoc phan tu thu hai"); }
             else if (x < 0 && y < 0) { Console.WriteLine("Toa do thuoc phan tu thu ba"); }
             else if (x > 0 && y < 0) { Console.WriteLine("Toa do thuoc phan tu thu bon"); }
+        }
+        static void Session04_ex04()
+            //Write a program to check whether a triangle is Equilateral, Isosceles or Scalene.
+        {
+            Console.WriteLine(" nhap so do canh a:");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine(" nhap so do canh b:");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine(" nhap so do canh c:");
+            int c = int.Parse(Console.ReadLine());
+            // kiem tra co phai tam giac ko
+            if ((a+b)>c && (a+c)>b && (b+c)>a) { Console.Write()}
+
         }
         static int Main()
         {
